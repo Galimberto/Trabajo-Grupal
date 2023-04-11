@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#bf9f36;
+    display: flex;
+}
+
+main{
+    background-color: gainsboro;
+}
+h1{
+    dpadding-top: 65px;
+    margin: auto;
+
+}
+.logo{
+    width: 100px;
+    margin-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.logo img{
+    width: 100%;
+}
+span{
+    font-size: 50px;
+    color: red;
+}
+/* carrusel de presentacion */
+
+.slider{
+    width: 55%;   
+    margin: auto;
+    overflow: hidden;
+    max-height: 450px;
+   
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+  
+}
+.slider li{
+   width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
