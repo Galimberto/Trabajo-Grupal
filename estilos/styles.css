@@ -1,13 +1,8 @@
+/* Estilos Generales */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header{
-    
-    background-color:#e9ebf8;
-   
 }
 h2{
     font-size: 45px;
@@ -16,9 +11,19 @@ h2{
     margin-bottom: 150px;
     text-align: center;
 }
+body{
+   g min-width: 385px;
+}
+/* Header */
+
+header{
+    
+    background-color:#e9ebf8;
+   
+}
 
 h1{font: 1em sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     color: red;
     margin: auto;
 
@@ -26,15 +31,37 @@ h1{font: 1em sans-serif;
 .titulo{
     height: 130px;
     display: flex;
+    justify-content:space-around;
 }
+.logo{
+    width:100px;  
+    margin-top: 15px;
+    
+    
+}
+.logo img{
+    width: 100%;
+}
+.bandera{
+    margin:auto 20px;
+    width: 50px;
+}
+.bandera img{
+    width: 100%;
+}
+
+/* barra de navegacion */
 .nav{
     display: flex;
     list-style: none;
     padding: 0;
     justify-content: flex-end;
+    
 }
 .nav li{
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    
     
 }
 .nav li a{
@@ -58,21 +85,13 @@ h1{font: 1em sans-serif;
     background-color: #4da1ac;
   }
 
-.logo{
-    width:100px;  
-    margin-top: 15px;
-    margin-left: 80px;
-    
-}
-.logo img{
-    width: 100%;
-}
+/* carrusel de presentacion */
 .contenedor-main{
     background-color:#e9ebf8;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-/* carrusel de presentacion */
+
 
 .slider{
     
@@ -116,9 +135,39 @@ h1{font: 1em sans-serif;
     75% {margin-left:-300%;}
     100%{margin-left:-300%;}
 }
+/* Laptop */
+@media only screen and (max-width: 850px){
+    h1{
+        font-size: 40px;
+    }
+    .slider{
+        width: 65%;
+    }
+}
+/* Tablet */
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 32px;
+    }
+    .slider{
+        width: 73%;
+    }
+    .bandera{
+        
+        width: 35px;
+    }
+    .logo{
+        width:70px;                          
+    }
+    .nav li a{
+        font-size: 1em;
+    }
+    font-size: 1.25em;
+}
+}
 
 /* MOBILE */
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 400px){
 
 .nav{
   
@@ -132,4 +181,5 @@ h1{font: 1em sans-serif;
 .slider{
     width: 80%;
 }
+
 }
