@@ -50,6 +50,7 @@ h1{font: 1em sans-serif;
     width: 100%;
 }
 
+
 /* barra de navegacion */
 .nav{
     display: flex;
@@ -60,8 +61,7 @@ h1{font: 1em sans-serif;
 }
 .nav li{
     margin-right: 10px;
-    margin-bottom: 3px;
-    
+    margin-bottom: 3px;   
     
 }
 .nav li a{
