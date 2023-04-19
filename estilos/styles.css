@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 h2{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: bold;
     margin-top: 100px;
     margin-bottom: 150px;
@@ -17,7 +17,7 @@ body{
 /* Header */
 
 header{
-    
+    /* position: relative; */
     background-color:#e9ebf8;
    
 }
@@ -52,27 +52,48 @@ h1{font: 1em sans-serif;
 
 
 /* barra de navegacion */
-.nav{
-    display: flex;
+nav ul {
     list-style: none;
     padding: 0;
+}
+nav li{
+    position: relative;
+}
+nav li ul{
+    position: absolute;
+    display: none;
+}
+nav li:hover ul{
+    display: block;
+}
+
+.cont-nav{
+    display: flex;
+    padding: 0;
     justify-content: flex-end;
-    
+       
 }
-.nav li{
-    margin-right: 10px;
-    margin-bottom: 3px;   
-    
-}
-.nav li a{
-    text-decoration: none;
-    font-size: 1.25em;
+
+.cont-nav li{
+    margin-right: 10px;    
+    transition: all 0.3s ease 0s;
     background-color: #c9d8dc;
     padding: 3px;
 }
-.nav li a:hover{
-    background-color: red;
+
+nav a{
+    color: hsl(304, 26%, 37%);
+    display: block;
+    padding: 0 5px;
+    text-decoration: none;
+    font-size: 1.25em;
 }
+nav a:hover{
+    background: rgba(0,0,0,.15);
+}
+
+
+/* decoradores */
 .barra-amarilla {
     height: 1em;
     max-height: 10px;
