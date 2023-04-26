@@ -11,9 +11,7 @@ h2{
     margin-bottom: 150px;
     text-align: center;
 }
-body{
-   g min-width: 385px;
-}
+
 /* Header */
 
 header{
@@ -183,9 +181,9 @@ nav a:hover{
     .nav li a{
         font-size: 1em;
     }
-    font-size: 1.25em;
+    
 }
-}
+
 
 /* MOBILE */
 @media only screen and (max-width: 400px){
