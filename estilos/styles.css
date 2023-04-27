@@ -175,6 +175,86 @@ nav a:hover{
     75% {margin-left:-300%;}
     100%{margin-left:-300%;}
 }
+/************ Pedidos.html *********************/
+
+.contenedor-pedidos{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+     "horario  entrega"
+     "imagen     mapa"
+     "formu    pedido"
+     "comanda  comanda";
+     
+}
+.imagen{
+    grid-area: imagen;
+    margin: auto;
+    
+}
+/* SECTION HORARIO */
+.horario{
+    grid-area: horario;
+    text-align: center;
+    margin: auto;
+    font-size: 1.25rem;
+}
+.horario th{
+    background: #d94a38;
+    color: #fff;
+    padding: 10px 20px;
+}
+.horario td{
+    border-right: 1px solid #ccc;
+    
+    text-align: center;
+    padding: 0 20px; 
+}
+.horario td[rowspan="3"]{
+    border-left: 1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.horario tr.ultima td{
+    border-bottom:1px solid #ccc;
+}
+.horario p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* SECTION ZONA ENTREGA */
+.zona-entrega{
+    grid-area: entrega;
+    margin: 20px auto;
+}
+
+.zona-entrega h3{
+    font-size: 2rem;
+}
+.zona-estamos{
+    grid-area: mapa;
+    
+}
+.maps{
+    width: 80%;
+    margin: auto;
+}
+.formulario{
+    grid-area: formu;
+}
+.pedido{
+    grid-area: pedido;
+}
+.comanda{
+    grid-area: comanda;
+}
+
+
+
+
+
 /* Laptop */
 @media only screen and (max-width: 850px){
     h1{
