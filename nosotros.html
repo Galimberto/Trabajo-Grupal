@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href=estilos/styles.css>
+    <link rel="stylesheet" href=estilos/styles_nosotros.css>
+    <script src="https://kit.fontawesome.com/57e1f5bf87.js" crossorigin="anonymous"></script>
     <title>Nosotros - PUNTO ROSSO</title>
 </head>
 <body>
@@ -27,10 +28,10 @@
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="pedidos.html">Pedidos</a></li>
-                <li><a href="#">Idioma</a>
+                <li><a href="#" id="li-idioma">Idioma</a>
                     <ul>
-                        <li><a href="nosotrosindex.html">Español</a></li>
-                        <li><a href="abaut.html">Ingles</a></li>
+                        <li><a href="index.html">Español</a></li>
+                        <li><a href="home.html">Ingles</a></li>
                     </ul>
                 </li>
                 
@@ -39,14 +40,121 @@
       </header>
         <div class="barra-amarilla"></div>
         <div class="barra-verde"></div>
+
+
+
+
     <main>
-        <div class="contenedor-main">
-            <br><br>
-            <h2>pagina Nosotros</h2>
-            
-            <h2>En construccion</h2>
-     </div>
+        <div class="nos-main">
+            <section class="nos-titulo">
+               <div class="nos-titulo-container">
+                 <h2>Nuestra Historia</h2>
+               </div>
+            </section>
+            <section class="nos-historia">
+               <div class="historia-container">
+                <h2>Sobre Nosotros</h2>
+                 <p>En 1998, en el corazón de Buenos Aires, nació una pequeña heladería artesanal que pronto se convertiría en el clásico de Palermo. La historia comenzó con dos amigos de la infancia, Martín y Ana, quienes compartían una pasión por los helados de calidad y decidieron crear algo propio.
+                 Al principio, la heladería era muy pequeña y solo ofrecía unos pocos sabores de helado. Pero con el tiempo, la reputación de "Punto Rosso" comenzó a crecer hasta convertirse en un destino popular para los amantes del helado artesanal.</p>
+                 <p>
+                 Los dueños siempre se enorgullecieron de utilizar ingredientes naturales y de alta calidad. A medida que la heladería crecía, los amigos también comenzaron a ofrecer sabores más creativos y únicos, como el Hibiscus Lemon y el Rooibos Caramel-Vainilla.</p>
+                 <p>
+                 A pesar de los altibajos de la economía argentina, la heladería siguió creciendo y prosperando a lo largo de los años. Hoy en día, "Punto Rosso" sigue siendo una de las favoritas de los palermitanos, ya que es conocida por su compromiso con la calidad y la creatividad. La heladería ha crecido mucho, sin embargo para los dueños lo más importante es la felicidad y la satisfacción de sus clientes, quienes siguen regresando una y otra vez para disfrutar de sus deliciosos helados.
+                 </p>
+               </div>
+            </section>
+            <section class="nos-galeria">
+                <div class="galeria-container" id="tablet-laptop">
+                    <h2></h2>
+                    <img src="./imagenes/nos_img/img_06.jpg" alt="helado_6">
+                    <img src="./imagenes/nos_img/img_03.jpg" alt="helado_3">
+                    <img src="./imagenes/nos_img/img_07.jpg" alt="helado_7">
+                    <img src="./imagenes/nos_img/img_08.jpg" alt="helado_8">
+                    <img src="./imagenes/nos_img/img_10.jpg" alt="helado_10" id="hide">
+                    <img src="./imagenes/nos_img/img_04.jpg" alt="helado_4" id="hide">
+                    <img src="./imagenes/nos_img/img_05.jpg" alt="helado_5" id="hide">
+                    <img src="./imagenes/nos_img/img_09.jpg" alt="helado_9" id="hide">
+                    <img src="./imagenes/nos_img/img_01.jpg" alt="helado_1" id="hide">
+                    <img src="./imagenes/nos_img/img_02.jpg" alt="helado_2" id="hide">
+                </div>
+                <div class="galeria-container sliders" id="mobil">
+                    <ul>
+                        <li><img src="./imagenes/nos_img/img_06.jpg" alt="helado_6"></li>
+                        <li><img src="./imagenes/nos_img/img_03.jpg" alt="helado_3"></li>
+                        <li><img src="./imagenes/nos_img/img_07.jpg" alt="helado_7"></li>
+                        <li><img src="./imagenes/nos_img/img_08.jpg" alt="helado_8"></li>
+                        <li><img src="./imagenes/nos_img/img_10.jpg" alt="helado_10"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="nos-equipo">
+                <div class="equipo">
+                    <h2>Nuestro Equipo</h2>
+                    <div class="equipo-container">
+                        <!-- <div class="nos-item">Martin</div>
+                        <div class="nos-item">Ana</div>
+                        <div class="nos-item">Leticia</div> -->
+                        <div class="nos-item img-1">
+                            <h3>Martín</h3>
+                            <img src="./imagenes/nos_img/Martin-modified.jpg" alt="Martin">
+                            <p>Apasionado por su trabajo, siempre busca ofrecer la mejor calidad y sabor a sus clientes. Es un emprendedor perseverante y dedicado que ha logrado hacer de su pequeño negocio un gran éxito en el barrio de Palermo.</p>
+                        </div>
+                        <div class="nos-item img-2">
+                            <h3>Ana</h3>
+                            <img src="./imagenes/nos_img/Ana-modified.jpg" alt="Ana">
+                            <p>Dedicada y perfeccionista, siempre busca ofrecer los mejores sabores y texturas en sus helados. Su amabilidad y carisma le ha permitido que su heladería se convierta en un lugar acogedor y entrañable para los amantes de los helados.</p>
+                        </div>
+                        <div class="nos-item img-3">
+                            <h3>Leticia</h3>
+                            <img src="./imagenes/nos_img/leticia-modified.jpg" alt="Gabriela">
+                            <p>Enérgica y entusiasta, contribuye a que la heladería sea un lugar agradable y acogedor. Es una persona comprometida que  disfruta de la interacción con los clientes y de ser parte de un equipo que comparte su pasión.
+                            </p>
+                        </div>
+                </div>
+
+            </section>
+            <section class="nos-map">
+                <div class="map-container">
+                    <div class="map-item m1" id="sinMapa">
+                        <p>Julián Álvarez 2486 - Palermo
+                        <br>
+                        <strong>Tel</strong>: (011) 4826-4437
+                        </p>
+                        <p><strong>Horario</strong>:
+                        <br>
+                        Domingos a Jueves de 12 PM a 12 AM
+                        <br>
+                        Viernes y Sábados de 12 PM a 01 AM
+                        </p>
+                    </div>
+                    <div class="map-item m1" id="mapaMini">
+                        <p><a href="https://www.google.com/maps/place/PUNTO+ROSSO,+Juli%C3%A1n+%C3%81lvarez+2486,+C1425+CABA,+Argentina/@-34.5866045,-58.4145843,15z/data=!4m6!3m5!1s0x95bcb57e2d347f85:0x3e275b8bf877e6a8!8m2!3d-34.5866045!4d-58.4145843!16s%2Fg%2F11f3y_57nk" target="_blank">Julián Álvarez 2486 - Palermo</a>
+                        <br>
+                        <strong>Tel</strong>: (011) 4826-4437
+                        </p>
+                        <p><strong>Horario</strong>:
+                        <br>
+                        Domingos a Jueves de 12 PM a 12 AM
+                        <br>
+                        Viernes y Sábados de 12 PM a 01 AM
+                        </p>
+                    </div>
+                    <div class="map-item m2" id="gmaps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7004364039362!2d-58.416596052762685!3d-34.58644570025978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5eb48df9933%3A0x44ecc7019908ec80!2sJuli%C3%A1n%20%C3%81lvarez%202486%2C%20C1425%20CABA!5e0!3m2!1ses!2sar!4v1682422368111!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-item delivery" id="delivery">
+                        <a href="pedidos.html">
+                            <i class="fa-solid fa-person-biking" style="font-size: 30px;"></i>
+                            <p id="envios">Envíos a domicilio</p>
+                        </a>                
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
+
+
+
     <footer>
         <div class="barra-amarilla"></div>
         <div class="footer">
@@ -54,5 +162,6 @@
         </div>
 
     </footer>
+    
 </body>
 </html>
