@@ -170,7 +170,7 @@ nav a:hover{
 
 /************ Pedidos.html *********************/
 
-.contenedor-pedidos{
+/* .contenedor-pedidos{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(4,1fr);
@@ -185,12 +185,32 @@ nav a:hover{
     grid-area: imagen;
     margin: auto;
     
-}
+} */
 /* SECTION HORARIO */
+.main-pedidos{
+    font-family: 'Times New Roman', Times, serif 
+}
+.contenedor-horario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    column-gap: 20px;
+}
+.img-deliv{
+    width: 200px;
+}
+.img-deliv img{
+    width: 100%;
+}
+.horario h3{
+    margin-bottom: 10px;
+    font-size:32px ;
+}
 .horario{
-    grid-area: horario;
+   
     text-align: center;
-    margin: auto;
+    
     font-size: 1.25rem;
 }
 .horario th{
@@ -219,30 +239,106 @@ nav a:hover{
 }
 /* SECTION ZONA ENTREGA */
 .zona-entrega{
-    grid-area: entrega;
-    margin: 20px auto;
+    text-align: center;
+    margin: 100px auto;
+     
 }
 
-.zona-entrega h3{
-    font-size: 2rem;
+.zona-entrega h3, .zona-entrega p{
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 .zona-estamos{
-    grid-area: mapa;
-    
+    text-align: center;    
+}
+.zona-estamos p{
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 .maps{
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
+/****** formulario **********/
 .formulario{
-    grid-area: formu;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    margin-top: 100px;
 }
-.pedido{
-    grid-area: pedido;
+.contenedor-form{
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 19px 20px 8px -9px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
 }
-.comanda{
-    grid-area: comanda;
+.cabecera{
+    background: #13334c;
+    color: azure;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
 }
+#formulario{
+    padding: 30px 20px;
+}
+.form-control{
+    padding-bottom: 20px;
+    margin-bottom: 7px;
+    position: relative;
+}
+.form-control input, .form-control textarea{
+    margin-top: 7px;
+    border: none;
+    background-color: #f0f0f0;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+} 
+.form-control textarea{
+    resize: none;
+}
+.form-control input:focus{
+    outline: none;
+}
+.form-control.ok input{
+    border: 0.1px solid;
+    border-color: #6f5;
+}
+.form-control.falla input{
+    border: 0.1px solid;
+    border-color: #f65;
+}
+#formulario input[type="submit"]{
+    background: #fd4f00;
+    border: 1px solid #fd5f00;
+    border-radius: 2px;
+    color: #f6ffe9;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+.form-control p{
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+}
+.form-control.falla p{
+    visibility: visible;
+    color: #f65;
+
+}
+
+
 
 /* _________________________________________________________________________ */
 /* Nosotros-main */
