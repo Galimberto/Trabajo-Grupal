@@ -67,8 +67,7 @@ h1{font: 1em sans-serif;
     width: 100%;
 }
 
-
-/* barra de navegacion */
+/**************** barra de navegacion ********************/
 nav ul {
     list-style: none;
     padding: 0;
@@ -97,7 +96,6 @@ nav li:hover ul{
     background-color: #c9d8dc;
     padding: 3px;
 }
-
 nav a{
     /* font-family: "Wolf Sans", Helvetica, sans-serif; */
     font-family: "grqalir", Helvetica, sans-serif;
@@ -111,8 +109,7 @@ nav a:hover{
     background: rgba(0,0,0,.15);
 }
 
-
-/* decoradores */
+/************** decoradores ************************/
 .barra-amarilla {
     height: 1em;
     max-height: 10px;
@@ -125,30 +122,25 @@ nav a:hover{
     background-color: #4da1ac;
   }
 
-/* carrusel de presentacion */
+/************* carrusel de presentacion ******************/
 .contenedor-main{
     background-color:#e9ebf8;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-
-.slider {
-    
+.slider {    
     width: 55%;   
     margin: auto;
     overflow: hidden;
-    max-height: 450px;
-   
+    max-height: 450px;   
 }
 .slider ul{
     display: flex;
     padding: 0;
     width: 400%;
-
     animation: cambio 20s infinite;
-    animation-direction: alternate;
-  
+    animation-direction: alternate;  
 }
 .slider li{
     width: 100%;
@@ -162,6 +154,19 @@ nav a:hover{
     height: 200px;
 }
 
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
 /* _________________________________________________________________________ */
 /* Nosotros-main */
 main {
@@ -543,19 +548,6 @@ div.map-item {
 
 /* Responsive - Header */
 
-@keyframes cambio{
-    0% {margin-left: 0;}
-    20%{margin-left: 0;}
-
-    25% {margin-left:-100%;}
-    45% {margin-left:-100%;}
-
-    50% {margin-left:-200%;}
-    70% {margin-left:-200%;}
-
-    75% {margin-left:-300%;}
-    100%{margin-left:-300%;}
-}
 /* Laptop */
 @media only screen and (max-width: 850px){
     h1{
