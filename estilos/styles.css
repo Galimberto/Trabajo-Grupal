@@ -170,22 +170,7 @@ nav a:hover{
 
 /************ Pedidos.html *********************/
 
-/* .contenedor-pedidos{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-     "horario  entrega"
-     "imagen     mapa"
-     "formu    pedido"
-     "comanda  comanda";
-     
-}
-.imagen{
-    grid-area: imagen;
-    margin: auto;
-    
-} */
+
 /* SECTION HORARIO */
 .main-pedidos{
     font-family: 'Times New Roman', Times, serif 
@@ -765,6 +750,8 @@ div.map-item {
 .slider{
     width: 80%;
 }
-
+.contenedor-form{
+    width: 350px;
+}
 }
 
