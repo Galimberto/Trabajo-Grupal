@@ -752,6 +752,9 @@ div.map-item {
         margin: 0;
         
     }
+    /* nav a{
+        font-size: 20px;
+    } */
 
 }
 
@@ -760,6 +763,9 @@ div.map-item {
     
     .slider{
         width: 100%;
+    }
+    nav a{
+        font-size: 20px;
     }
 }
 /* Tablet */
@@ -774,9 +780,9 @@ div.map-item {
     .logo{
         width:300px;                          
     }
-    .nav li a{
-        font-size: 1em;
-    }
+    /* nav li a{
+        font-size: 20px;
+    } */
     /* font-size: 1.25em; */
 }
 
@@ -796,10 +802,13 @@ div.map-item {
     width: 200px;
 } 
 .slider{
-    width: 80%;
+    width: 100%;
 }
 .contenedor-form{
     width: 350px;
+}
+nav a{
+    font-size: 16px;
 }
 }
 
