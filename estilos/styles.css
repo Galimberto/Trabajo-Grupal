@@ -19,13 +19,7 @@
     font-weight: normal;
 }
 
-h2{
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    text-align: center;
-}
+
 body {
     min-width: 385px;
     /* font-family: "Wolf Sans", Helvetica, sans-serif; */
@@ -719,7 +713,116 @@ div.map-item {
     }
 }
 
+/************* Section Productos (by Johanna) *****************/
 
+.fondo{
+    background: whitesmoke;
+}
+.cont-productos{
+    width: auto;
+                height: auto;
+                padding-top: 80px;
+                padding-bottom: 80px;
+
+                background: url("/imagenes/conos2t.jpg");
+                width: 100%;
+                border: outset;
+}
+
+.titulo-main {
+    font: 1em "estilos\font\grqalir-bold.ttf";
+    font-weight: bolder;
+    font-size: 60px;
+    color: rgb(176, 29, 29);
+    text-shadow: 2px 6px 4px whitesmoke;
+    letter-spacing: 10px;
+    text-align: center;
+    
+
+}
+.tit-sec h2{
+    padding-left: 50px;
+    font: 1em "estilos\font\grqalir-bold.ttf";
+    color: #1b5c64;
+    font-size: 35px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px whitesmoke;
+    background-image: linear-gradient(to left, #4da1ac, #c5d6d8);
+    border: outset;
+}
+div.desc {
+    padding: 20px;
+    text-align: center;
+    font: 1em "estilos\font\grqalir-bold.ttf";
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(white, #fef1c3);
+    bottom: 30%;
+    border-style: outset;
+    border-width: 1px;
+
+}
+
+ul.lista {
+    list-style-type: circle;
+    font: 1em "estilos\font\grqalir-bold.ttf";
+    background-image: linear-gradient(white, #fef1c3);
+    padding-left: 20%;
+    border-style: outset;
+    border-width: 1px;
+    margin-bottom: 25px;
+
+}
+/*Presentaciones*/
+.row-p {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 4px;
+
+
+}
+
+.column-p {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 25%;
+    /*flex-grow: 1;*/
+    /*flex-basis: content;*/
+    padding: 0 4px;
+    justify-content: center;
+
+
+}
+
+.column-p img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 25%;
+
+
+}
+
+/*Gustos*/
+/* Create four equal columns that sits next to each other */
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+
+}
 
 
 
@@ -750,7 +853,30 @@ div.map-item {
 
 /* Laptop */
 @media only screen and (max-width: 850px){
+    .titulo-main {
+        font-size: 50px;
+    }
     
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .column-p {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    div.desc {
+        font-size: 85%;
+    }
+
+    ul.lista {
+        font-size: 70%;
+    }
+
+
     .slider{
         width: 100%;
     }
@@ -771,6 +897,29 @@ div.map-item {
 }
 /* Tablet */
 @media only screen and (max-width: 600px){
+    .titulo-main {
+        font-size: 40px;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column-p {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    div.desc {
+        font-size: 70%;
+    }
+
+    ul.lista {
+        font-size: 50%;
+    }
+ 
+
     .zona-estamos p{
         font-size: 20px;
      } 
@@ -803,6 +952,36 @@ div.map-item {
 
 /* MOBILE */
 @media only screen and (max-width: 400px){
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column-p {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .tit-sec h2 {
+        padding-left: 30px;
+        font-size: 90%;
+    }
+    .titulo-main {
+        font-size: 95%;
+    }
+    div.desc {
+        flex: 90%;
+        max-width: 100%;
+        font-size: 50%;
+    }
+
+    ul.lista {
+        flex: 100%;
+        max-width: 100%;
+        font-size: 30%;
+
+    }
+   
     .zona-mapa{
         width: 95vw;
         margin: auto;
