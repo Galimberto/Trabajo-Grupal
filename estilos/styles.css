@@ -201,7 +201,12 @@ nav a:hover{
 .main-pedidos{
     font-family: 'Times New Roman', Times, serif 
 }
+.cont-hor-zon{
+    display: flex;
+    flex-wrap: wrap;
+}
 .contenedor-horario{
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,49 +215,37 @@ nav a:hover{
 }
 .img-deliv{
     width: 200px;
+    margin-left: 20px;
 }
 .img-deliv img{
     width: 100%;
+}
+.img-hor img{
+    width:100%;
 }
 .horario h3{
     margin-bottom: 10px;
     font-size:32px ;
 }
 .horario{
-   
-    text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
     font-size: 1.25rem;
 }
-.horario th{
-    background: #d94a38;
-    color: #fff;
-    padding: 10px 20px;
-}
-.horario td{
-    border-right: 1px solid #ccc;
-    
-    text-align: center;
-    padding: 0 20px; 
-}
-.horario td[rowspan="3"]{
-    border-left: 1px solid #ccc;
-    border-bottom:1px solid #ccc;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.horario tr.ultima td{
-    border-bottom:1px solid #ccc;
-}
-.horario p{
-    font-size: 2rem;
-    font-weight: 600;
-}
+
 /* SECTION ZONA ENTREGA */
 .zona-entrega{
     text-align: center;
     margin: 100px auto;
      
+}
+.zona-mapa{
+    margin: auto;
+    width: 50vw;
+}
+.zona-mapa img{
+width: 100%;
 }
 
 .zona-entrega h3, .zona-entrega p{
@@ -267,7 +260,7 @@ nav a:hover{
     margin-bottom: 10px;
 }
 .maps{
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 /****** formulario **********/
@@ -752,10 +745,7 @@ div.map-item {
         margin: 0;
         
     }
-    /* nav a{
-        font-size: 20px;
-    } */
-
+   
 }
 
 /* Laptop */
@@ -767,10 +757,35 @@ div.map-item {
     nav a{
         font-size: 20px;
     }
+    .img-deliv{
+        width: 10vw;
+    }
+    .zona-mapa{
+        width: 80vw;
+        
+     }  
+     .maps{
+        width: 80%;
+        margin: auto;
+    }
 }
 /* Tablet */
 @media only screen and (max-width: 600px){
+    .zona-estamos p{
+        font-size: 20px;
+     } 
+     .zona-entrega h3, .zona-entrega p{
+        font-size: 20px;
+     }
+     
+    .horario h3{
+        font-size: 16px;
+    }
     
+    .contenedor-horario{
+        column-gap: 5px;
+        
+    }
     .slider{
         width: 100%;
     }
@@ -780,12 +795,22 @@ div.map-item {
     .logo{
         width:300px;                          
     }
+    .img-deliv{
+        display: none;
+    }
     
 }
 
 /* MOBILE */
 @media only screen and (max-width: 400px){
-
+    .zona-mapa{
+        width: 95vw;
+        margin: auto;
+     }  
+    
+    .zona-entrega h3, .zona-entrega p{
+            font-size: 16px;
+         } 
 
 .logo {
     width: 200px;
