@@ -257,6 +257,10 @@ width: 100%;
     width: 50%;
     margin: auto;
 }
+
+.pedido h2, .comanda h2{
+    text-align: center;
+}
 /****** formulario **********/
 .formulario{
     font-family: Arial, Helvetica, sans-serif;
