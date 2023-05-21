@@ -827,7 +827,57 @@ ul.lista {
     width: 100%;
 
 }
+/********************* SECTION FOOTER ******(By Erik) *******************/
 
+.footer{
+    background-color: #4da1ac;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont-footer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.foot1, .foot2, .foot3{
+   text-align: center;
+   padding: 7px;
+  
+}
+.foot3 a{
+    margin: 10px 5px;
+}
+.foot2 p{
+    margin: 10px;
+}
+.cont-footer a{
+    text-decoration: none;
+    color: black;
+}
+.cont-footer h4{
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+.p-negr{
+    font-size: 1.25em;
+    font-weight:600;
+}
+.bike{
+    font-size: 40px;
+}
+
+.hor-sep{
+    margin-top: 10px;
+}
+
+
+
+.copy{
+    text-align: center;
+    font-size: small;
+}
+
+/**************************************************************************/
 
 
 /* Responsive - Header */
@@ -857,6 +907,16 @@ ul.lista {
 
 /* Laptop */
 @media only screen and (max-width: 850px){
+    .cont-footer{
+        flex-direction: column;
+    }
+    .foot1, .foot2, .foot3 {
+        margin-top: 15px;
+    }
+    .foot3{
+        margin-bottom: 15px;
+    }
+   
     .titulo-main {
         font-size: 50px;
     }
