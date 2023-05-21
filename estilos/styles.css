@@ -171,8 +171,8 @@ nav a:hover{
 }
 .footer{
     background-color: #4da1ac;
-    height: 200px;
 }
+ 
 
 @keyframes cambio{
     0% {margin-left: 0;}
