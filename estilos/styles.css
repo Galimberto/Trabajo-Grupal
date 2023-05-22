@@ -25,11 +25,15 @@ body {
   max-width: 2000px;
   /* font-family: "Wolf Sans", Helvetica, sans-serif; */
   font-family: "grqalir", Helvetica, sans-serif;
+  background-color: #4da1ac;
 }
 /* Header */
 
 header {
   background-color: whitesmoke;
+}
+.cont-menu label {
+  background-color: #e1c561;
 }
 .titulo {
   display: flex;
@@ -593,6 +597,10 @@ div.map-item {
     /* A verificar con el header */
     padding: 5vh 0 5vh 0;
   }
+  .nos-equipo h2,
+  .nos-historia h2 {
+    font-size: calc(1em + 1vw);
+  }
   .nos-item h3 {
     padding: 0 0 0 calc(0.25em + 1vw);
     font-size: calc(0.4em + 1vw);
@@ -644,6 +652,10 @@ div.map-item {
   }
   .nos-titulo h2 {
     padding: 5vh 0 5vh 0;
+  }
+  .nos-equipo h2,
+  .nos-historia h2 {
+    font-size: calc(1em + 1vw);
   }
   .nos-item h3 {
     font-size: calc(0.5em + 1vw);
