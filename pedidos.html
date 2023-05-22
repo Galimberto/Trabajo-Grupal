@@ -1,170 +1,213 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">   
-    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href=estilos/styles.css>
-    <script src="https://kit.fontawesome.com/57e1f5bf87.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/57e1f5bf87.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Pedidos</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="titulo">
-            <div> </div>
-           <div class="logo">
-             <img  src="imagenes/logoNew.png"  alt="Logo del local">              
-           </div>
-           <div class="bandera">
-            <img src="imagenes/espana.png" alt="bandera Española">            
-           </div>
+      <div class="titulo">
+        <div></div>
+        <div class="logo">
+          <img src="imagenes/logoNew.png" alt="Logo del local" />
         </div>
-       <div class="cont-menu">
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img src="imagenes/icono-menu.png" alt="imagen icono-menu" class="pinta"></label>
+        <div class="bandera">
+          <img src="imagenes/espana.png" alt="bandera Española" />
+        </div>
+      </div>
+      <div class="cont-menu">
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu"
+          ><img
+            src="imagenes/icono-menu.png"
+            alt="imagen icono-menu"
+            class="pinta"
+        /></label>
         <nav class="menu">
-            <ul class="cont-nav">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="pedidos.html">Pedidos</a></li>
-                <li><a href="#">Idioma</a>
-                    <ul>
-                        <li><a href="pedidos.html">Español</a></li>
-                        <li><a href="delivery.html">Ingles</a></li>
-                    </ul>
-                </li>
-                
-            </ul>
-          </nav>
-        </div>
+          <ul class="cont-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li>
+              <a href="#">Idioma</a>
+              <ul>
+                <li><a href="pedidos.html">Español</a></li>
+                <li><a href="delivery.html">Ingles</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-        <div class="barra-amarilla"></div>
-        <div class="barra-verde"></div>
-        
-        <main class="main-pedidos">
-            <div class="contenedor-pedidos">
-                <section class="cont-hor-zon">
-                    <div class="contenedor-horario">                  
-                         <div class="img-deliv">                   
-                           <img src="imagenes/bike.png"  alt="imagen de bike">
-                         </div>
-                         <div class="horario">
-                            <h3>Horario para Delivery</h3> 
-                            <div class="img-hor">
-                             <img src="imagenes/Horario.jpg" alt="imagen h">
-                            </div>                                         
-                       </div>
-                   </div>
-                  </section> 
-                
-                <section class="zona-entrega">
-                    
-                    <h3>Limites de zona de entrega</h3>
-                    <p>La zona delimitada dentro de las siguientes Avenidas</p>
-                    <p>Av. Dorrego, Av. Cordoba, Av. Callao y Av. Libertador</p>
-                
-                    <div class="zona-mapa">
-                    <img src="imagenes/zona Entrega.jpg" alt="mapa zona">
-                  </div> 
-                </section>
-                
-                <section class="zona-estamos">
-                    <p>Nuestra ubicacion en el mapa interactivo</p>
-                <div class="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7004364039362!2d-58.416596052762685!3d-34.58644570025978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5eb48df9933%3A0x44ecc7019908ec80!2sJuli%C3%A1n%20%C3%81lvarez%202486%2C%20C1425%20CABA!5e0!3m2!1ses!2sar!4v1682422368111!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                </section>    
-                <section class="formulario">
-                    <div class="contenedor-form">
-                        <div class="cabecera">
-                            <h3>Datos del Cliente</h3>
-                        </div>
-                        <form id="formulario" action="">
-                            <div class="form-control">
-                                <label for="nombre"  >Nombre</label>
-                                <input id="nombre" type="text" placeholder="Escribe tu nombre o nick">
-                                <p></p>
-                            </div>
-                
-                            <div class="form-control">
-                                <label for="direccion">Direccion</label>
-                                <input id="direccion" type="text" placeholder="Escribe tu direccion">
-                                <p></p>
-                            </div>
-                
-                            <div class="form-control">
-                                <label for="email">E-mail</label>
-                                <input id="email" type="email"placeholder="Escribe tu e-mail">
-                                <p></p>
-                            </div>
-                
-                            <div class="form-control">
-                                <label for="telefono">Telefono o Celular - ej.: CABA (011) 6505-1234</label>
-                                <input id="telefono" type="tel" placeholder="con codigo de area y sin intercalar 15">
-                                <p></p>
-                            </div>
-                
-                            <div class="form-control">
-                                <label for="comentario" >Observaciones</label>
-                                <textarea name="" id="comentario" cols="50" rows="5" placeholder="Esta entrada de datos es optativa"></textarea>
-                                <p></p>
-                            </div>
-                            <input type="submit">
-                        </form>
-                    </div>
-                </section>
-                <section class="pedido">
-                    <br><br>
-                    <h2>pedido</h2>
-                </section>
-                <section class="comanda">
-                    <h2>comanda</h2>
-                </section>                
-          </div>
-        </main>
+    <div class="barra-amarilla"></div>
+    <div class="barra-verde"></div>
 
-        <div class="barra-amarilla"></div>
-        <footer class="footer">        
-            <div class="cont-footer">
-                <div class="foot1">
-                    <a href="pedidos.html">
-                        <h4>DELIVERY</h4>
-                        <span class="bike"> <i class="fa-solid fa-person-biking" ></i></span>                
-                    </a>
-                    <p class="p-negr">Envíos a domicilio</p>
-                    <p class="p-negr">sin cargo</p>
-                    <br>   
-    
-                    
-                                                     
-                </div>
-                <div class="foot2">
-                    <h4>CONTACTO</h4>
-                    <p>Julián Álvarez 2486 - Palermo</p>
-                    <p><strong>Tel</strong>: (011) 4826-4437 </p> 
-                    <p>Buenos Aires - Argentina</p>  
-                        
-                        
-                </div>
-                <div class="foot3">
-                    <h4>SEGUINOS</h4>
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                    
-                    <p class="hor-sep"><strong>Horario:</strong></p>
-                    <p>Dom a Jue de 12 PM a 12 AM</p> 
-                    <p>Vie y Sáb de 12 PM a 01 AM</p>   
-                                                                    
-                </div>
+    <main class="main-pedidos">
+      <div class="contenedor-pedidos">
+        <section class="cont-hor-zon">
+          <div class="contenedor-horario">
+            <div class="img-deliv">
+              <img src="imagenes/bike.png" alt="imagen de bike" />
             </div>
-            <div class="copy">
-                <p>© 2023 Punto Rosso │ Todos los derechos reservados</p>
+            <div class="horario">
+              <h3>Horario para Delivery</h3>
+              <div class="img-hor">
+                <img src="imagenes/Horario.jpg" alt="imagen h" />
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="zona-entrega">
+          <h3>Limites de zona de entrega</h3>
+          <p>La zona delimitada dentro de las siguientes Avenidas</p>
+          <p>Av. Dorrego, Av. Cordoba, Av. Callao y Av. Libertador</p>
+
+          <div class="zona-mapa">
+            <img src="imagenes/zona Entrega.jpg" alt="mapa zona" />
+          </div>
+        </section>
+
+        <section class="zona-estamos">
+          <p>Nuestra ubicacion en el mapa interactivo</p>
+          <div class="maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7004364039362!2d-58.416596052762685!3d-34.58644570025978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5eb48df9933%3A0x44ecc7019908ec80!2sJuli%C3%A1n%20%C3%81lvarez%202486%2C%20C1425%20CABA!5e0!3m2!1ses!2sar!4v1682422368111!5m2!1ses!2sar"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+        <section class="formulario">
+          <div class="contenedor-form">
+            <div class="cabecera">
+              <h3>Datos del Cliente</h3>
+            </div>
+            <form id="my-form" action="https://formspree.io/f/moqzzqoe" method="POST">
+              <div class="form-control">
+                <label for="nombre">Nombre</label>
+                <input
+                  id="nombre"
+                  name="nombre"
+                  type="text"
+                  placeholder="Escribe tu nombre o nick"
+                />
+                <p></p>
+              </div>
+
+              <div class="form-control">
+                <label for="direccion">Direccion</label>
+                <input
+                  id="direccion"
+                  name="direccion"
+                  type="text"
+                  placeholder="Escribe tu direccion"
+                />
+                <p></p>
+              </div>
+
+              <div class="form-control">
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Escribe tu e-mail"
+                />
+                <p></p>
+              </div>
+
+              <div class="form-control">
+                <label for="telefono"
+                  >Telefono o Celular - ej.: CABA (011) 6505-1234</label
+                >
+                <input
+                  id="telefono"
+                  name="telefono"
+                  type="tel"
+                  placeholder="con codigo de area y sin intercalar 15"
+                />
+                <p></p>
+              </div>
+
+              <div class="form-control">
+                <label for="comentario">Observaciones</label>
+                <textarea
+                  name="comentario"
+                  id="comentario"
+                  cols="50"
+                  rows="5"
+                  placeholder="Esta entrada de datos es optativa"
+                ></textarea>
+                <p></p>
+              </div>
+              <!-- <input type="submit" /> -->
+              <button id="my-form-button">Submit</button>
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+
+        </section>
+        <section class="pedido">
+          <br /><br />
+          <h2>pedido</h2>
+        </section>
+        <section class="comanda">
+          <h2>comanda</h2>
+        </section>
+      </div>
+    </main>
+
+    <div class="barra-amarilla"></div>
+    <footer class="footer">
+      <div class="cont-footer">
+        <div class="foot1">
+          <a href="pedidos.html">
+            <h4>DELIVERY</h4>
+            <span class="bike"> <i class="fa-solid fa-person-biking"></i></span>
+          </a>
+          <p class="p-negr">Envíos a domicilio</p>
+          <p class="p-negr">sin cargo</p>
+          <br />
+        </div>
+        <div class="foot2">
+          <h4>CONTACTO</h4>
+          <p>Julián Álvarez 2486 - Palermo</p>
+          <p><strong>Tel</strong>: (011) 4826-4437</p>
+          <p>Buenos Aires - Argentina</p>
+        </div>
+        <div class="foot3">
+          <h4>SEGUINOS</h4>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+
+          <p class="hor-sep"><strong>Horario:</strong></p>
+          <p>Dom a Jue de 12 PM a 12 AM</p>
+          <p>Vie y Sáb de 12 PM a 01 AM</p>
+        </div>
+      </div>
+      <div class="copy">
+        <p>© 2023 Punto Rosso │ Todos los derechos reservados</p>
+      </div>
     </footer>
     <script src="js/app2.js"></script>
-</body>
+  </body>
 </html>
