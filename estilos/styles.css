@@ -131,13 +131,14 @@ nav a:hover {
 
 /************* INICIO - carrusel de presentacion ******************/
 .contenedor-main {
-  background-color: #e9ebf8;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color:#4da1ac;
+  padding-top: 0;
+  padding-bottom: 40px;
 }
 
 .slider {
-  width: 55%;
+  /* width: 55%; */
+  width: 100%;
   margin: auto;
   overflow: hidden;
   max-height: 450px;
@@ -159,6 +160,27 @@ nav a:hover {
 .footer {
   background-color: #4da1ac;
 }
+.promo-p {
+  font-family: "Wolf Sans", Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.promo-p p {
+  font-size: calc(1.8em + 1vw);
+}
+.promo-img-container {
+  padding: 0 0 30px 0;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.promo-img-container img{
+  max-width: 350px;
+  padding: 1rem;
+}
+
+
 
 @keyframes cambio {
   0% {
