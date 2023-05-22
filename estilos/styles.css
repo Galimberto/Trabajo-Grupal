@@ -129,19 +129,18 @@ nav a:hover {
   background-color: #4da1ac;
 }
 
-/************* INICIO - carrusel de presentacion ******************/
+/************* INDEX.html - carrusel de presentacion ******************/
 .contenedor-main {
   background-color:#4da1ac;
   padding-top: 0;
   padding-bottom: 40px;
 }
-
 .slider {
   /* width: 55%; */
   width: 100%;
   margin: auto;
   overflow: hidden;
-  max-height: 450px;
+  max-height: 600px;
 }
 .slider ul {
   display: flex;
@@ -179,8 +178,6 @@ nav a:hover {
   max-width: 350px;
   padding: 1rem;
 }
-
-
 
 @keyframes cambio {
   0% {
