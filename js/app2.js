@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const form = document.getElementById('formulario')
+    const form = document.getElementById('my-form')
     const nombre = document.getElementById('nombre')
     const direccion = document.getElementById('direccion')
     const email = document.getElementById('email')
@@ -80,19 +80,19 @@ async function handleSubmit(event) {
         }
     }).then(response => {
         if (response.ok) {
-            status.innerHTML = "Thanks for your submission!";
+            status.innerHTML = "Gracias por contactarnos!";
             form.reset()
         } else {
             response.json().then(data => {
                 if (Object.hasOwn(data, 'errors')) {
                     status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                 } else {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
+                    status.innerHTML = "Ups! Hubo un problema al enviar la información. Por favor, intenta nuevamente"
                 }
             })
         }
     }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Ups! Hubo un problema al enviar la información. Por favor, intenta nuevamente"
     });
 }
 form.addEventListener("submit", handleSubmit)
