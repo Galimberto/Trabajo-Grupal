@@ -6,8 +6,8 @@ window.addEventListener("load", () => {
   const telefono = document.getElementById("telefono");
   // const comentario = document.getElementById('comentario')
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault()
+    form.addEventListener('keyup', (e) => {
+        // e.preventDefault()
         validaCampos()
     })
 
@@ -19,13 +19,35 @@ window.addEventListener("load", () => {
     const telefonoValor = telefono.value.trim();
     //    const comentarioValor = comentario.value.trim();
 
-    //validando nombre y direccion
-    !nombreValor
-      ? validaFalla(nombre, "Este dato es requerido")
-      : validaOk(nombre);
-    !direccionValor
-      ? validaFalla(direccion, "Este dato es requerido")
-      : validaOk(direccion);
+// valida nombre
+if (!nombreValor){
+  validaFalla(nombre, "Este dato es requerido")
+  } else if (nombreValor.length < 4){
+  validaFalla(nombre, "Ercribe minimo 4 caracteres")
+  } else {
+   validaOk(nombre);
+  }
+
+
+
+  //valida direccion
+  if (!direccionValor){
+     validaFalla(direccion, "Este dato es requerido")
+  } else if (direccionValor.length < 8){
+    validaFalla(direccion, "Ercribe minimo 8 caracteres")
+  } else {
+    validaOk(direccion);
+  }
+
+
+
+    // //validando nombre y direccion
+    // !nombreValor
+    //   ? validaFalla(nombre, "Este dato es requerido")
+    //   : validaOk(nombre);
+    // !direccionValor
+    //   ? validaFalla(direccion, "Este dato es requerido")
+    //   : validaOk(direccion);
 
     // validando mail
     if (!emailValor) {
@@ -61,6 +83,8 @@ window.addEventListener("load", () => {
     }
     const validaOk = (input, msje) => {
         const formControl = input.parentElement
+        const aviso = formControl.querySelector("p");
+        aviso.innerText = msje;
         formControl.className = 'form-control ok'
     }
     const validaEmail = (email) => {
