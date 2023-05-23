@@ -55,6 +55,9 @@ window.addEventListener('load', ()=> {
     }
     const validaOk = (input,msje) => {
         const formControl = input.parentElement
+        const aviso = formControl.querySelector('p')
+        aviso.innerText = msje
+
         formControl.className = 'form-control ok'
     }
     const validaEmail = (email) =>{
