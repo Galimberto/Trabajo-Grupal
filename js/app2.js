@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
   const telefono = document.getElementById("telefono");
   // const comentario = document.getElementById('comentario')
 
-    form.addEventListener('keyup', (e) => {
+    form.addEventListener('keyup', () => {
         // e.preventDefault()
         validaCampos()
     })

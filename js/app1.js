@@ -1,13 +1,13 @@
 window.addEventListener('load', ()=> {
-    const form = document.getElementById('formulario')
+    const form = document.getElementById('my-form')
     const nombre = document.getElementById('nombre')
     const direccion = document.getElementById('direccion')
     const email = document.getElementById('email')
     const telefono = document.getElementById('telefono')
     // const comentario = document.getElementById('comentario')
     
-    form.addEventListener('submit', (e) => {
-        e.preventDefault()
+    form.addEventListener('keyup', () => {
+        // e.preventDefault()
          validaCampos()
      })
     
@@ -19,10 +19,29 @@ window.addEventListener('load', ()=> {
        const telefonoValor = telefono.value.trim();
     //    const comentarioValor = comentario.value.trim();
     
-        //validando nombre y direccion
-       (!nombreValor) ? validaFalla(nombre, 'This data is required') : validaOk(nombre);
-       (!direccionValor) ? validaFalla(direccion, 'This data is required') : validaOk(direccion);
-        
+    //     //validando nombre y direccion
+    //    (!nombreValor) ? validaFalla(nombre, 'This data is required') : validaOk(nombre);
+    //    (!direccionValor) ? validaFalla(direccion, 'This data is required') : validaOk(direccion);
+
+    // valida nombre
+    if (!nombreValor){
+      validaFalla(nombre, "This data is required")
+    } else if (nombreValor.length < 4){
+    validaFalla(nombre, "Ercribe minimo 4 caracteres")
+    } else {
+     validaOk(nombre);
+    }
+    
+  
+    //valida direccion
+    if (!direccionValor){
+       validaFalla(direccion, "This data is required")
+    } else if (direccionValor.length < 8){
+      validaFalla(direccion, "Ercribe minimo 8 caracteres")
+    } else {
+      validaOk(direccion);
+    }
+
        // validando mail
         if (!emailValor){
             validaFalla(email, 'This data is required')
@@ -45,7 +64,7 @@ window.addEventListener('load', ()=> {
        
                               
     
-    }       
+    } ;      
     const validaFalla = (input,msje) => {
         const formControl = input.parentElement
         const aviso = formControl.querySelector('p')
@@ -69,3 +88,40 @@ window.addEventListener('load', ()=> {
     
     
     })
+
+    var form = document.getElementById("my-form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        status.innerHTML = "Gracias por contactarnos!";
+        form.reset();
+      } else {
+        response.json().then((data) => {
+          if (Object.hasOwn(data, "errors")) {
+            status.innerHTML = data["errors"]
+              .map((error) => error["message"])
+              .join(", ");
+          } else {
+            status.innerHTML =
+              "Ups! Hubo un problema al enviar la información. Por favor, intenta nuevamente";
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      status.innerHTML =
+        "Ups! Hubo un problema al enviar la información. Por favor, intenta nuevamente";
+    });
+}
+form.addEventListener("submit", handleSubmit)
